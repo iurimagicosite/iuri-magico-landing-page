@@ -1,10 +1,26 @@
 import { Sparkles, Award, Star, Heart } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Helmet } from "react-helmet-async";
 
 const Sobre = () => {
   return (
     <main className="min-h-screen magical-bg">
+      <Helmet>
+        <title>Sobre | Iuri o Mágico</title>
+        <meta
+          name="description"
+          content="Conheça a história, experiência e valores de Iuri o Mágico. Mais de 10 anos encantando eventos com mágica profissional."
+        />
+        <meta property="og:title" content="Sobre | Iuri o Mágico" />
+        <meta
+          property="og:description"
+          content="Conheça a história, experiência e valores de Iuri o Mágico. Mais de 10 anos encantando eventos com mágica profissional."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://iuriomagico.com.br/sobre" />
+        <meta property="og:image" content="/fotos/0003.jpg" />
+      </Helmet>
       <Header />
 
       {/* Banner Image */}

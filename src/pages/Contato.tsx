@@ -1,10 +1,26 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Phone, Mail } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const Contato = () => {
   return (
     <main className="min-h-screen magical-bg">
+      <Helmet>
+        <title>Contato | Iuri o Mágico</title>
+        <meta
+          name="description"
+          content="Entre em contato com Iuri o Mágico para levar experiências mágicas ao seu evento. WhatsApp e e-mail para orçamentos e dúvidas."
+        />
+        <meta property="og:title" content="Contato | Iuri o Mágico" />
+        <meta
+          property="og:description"
+          content="Entre em contato com Iuri o Mágico para levar experiências mágicas ao seu evento. WhatsApp e e-mail para orçamentos e dúvidas."
+        />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://iuriomagico.com.br/contato" />
+        <meta property="og:image" content="/fotos/IMG_0430.png" />
+      </Helmet>
       <Header />
 
       {/* Título e mensagem */}
