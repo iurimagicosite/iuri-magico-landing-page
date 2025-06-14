@@ -54,12 +54,12 @@ const Header = () => {
           >
             Serviços
           </a>
-          <a
-            href="#contact"
+          <Link
+            to="/contato"
             className="text-white hover:magical-text transition-all"
           >
             Contato
-          </a>
+          </Link>
           <a
             href="https://wa.me/555184232748"
             target="_blank"
@@ -104,13 +104,13 @@ const Header = () => {
             >
               Serviços
             </a>
-            <a
-              href="#contact"
+            <Link
+              to="/contato"
               className="text-white hover:magical-text py-2 transition-all"
               onClick={() => setMobileMenuOpen(false)}
             >
               Contato
-            </a>
+            </Link>
             <a
               href="https://wa.me/555184232748"
               target="_blank"
