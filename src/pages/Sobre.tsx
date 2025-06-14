@@ -7,8 +7,22 @@ const Sobre = () => {
     <main className="min-h-screen magical-bg">
       <Header />
 
+      {/* Banner Image */}
+      <section className="relative w-full h-[320px] md:h-[420px] lg:h-[480px] overflow-hidden flex items-center justify-center">
+        <img
+          src="/fotos/0003.jpg"
+          alt="Iuri o Mágico no palco com fumaça azul"
+          className="w-full h-full object-cover object-center"
+          style={{ filter: "brightness(0.85)" }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+        <h1 className="absolute bottom-8 left-1/2 -translate-x-1/2 text-3xl md:text-5xl font-bold magical-text text-center drop-shadow-lg">
+          Sobre o Mágico
+        </h1>
+      </section>
+
       {/* Hero Section */}
-      <section className="pt-32 pb-16 relative overflow-hidden">
+      <section className="pt-12 pb-16 relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center mb-6">
             <Sparkles
@@ -23,11 +37,6 @@ const Sobre = () => {
               size={24}
             />
           </div>
-
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center mb-6">
-            <span className="magical-text">Iuri o Mágico</span>
-          </h1>
-
           <p className="text-white/80 text-center max-w-2xl mx-auto text-lg">
             Transformando momentos comuns em experiências extraordinárias
             através da arte da mágica
@@ -38,8 +47,16 @@ const Sobre = () => {
       {/* História Section */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-black/50 rounded-lg p-8 border border-magic-primary/20">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
+            {/* Imagem redonda */}
+            <div className="flex-shrink-0 flex justify-center w-full md:w-auto">
+              <img
+                src="/fotos/IMG_0228.png"
+                alt="Iuri o Mágico segurando placa Sorriso"
+                className="w-48 h-48 md:w-56 md:h-56 rounded-full object-cover border-4 border-magic-primary shadow-lg bg-black/40"
+              />
+            </div>
+            <div className="bg-black/50 rounded-lg p-8 border border-magic-primary/20 flex-1">
               <h2 className="text-3xl font-bold mb-6">Minha História</h2>
               <p className="text-white/80 mb-6">
                 Desde criança, fui fascinado pela arte da mágica. O que começou
