@@ -57,10 +57,10 @@ const Hero = () => {
             Reservar Agora
           </a>
           <a
-            href="#services"
+            href="/produtos"
             className="px-6 py-3 rounded-full bg-transparent text-white border border-magic-primary hover:bg-magic-primary/10 transition-all text-center"
           >
-            Descobrir Serviços
+            Descobrir Produtos
           </a>
         </div>
 
