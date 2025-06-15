@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Phone, Mail } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import { Instagram, Youtube } from "lucide-react";
 
 const Contato = () => {
   return (
@@ -77,6 +78,38 @@ const Contato = () => {
                 </span>
                 iuriomagico@gmail.com
               </a>
+              {/* Redes sociais */}
+              <div className="flex gap-6 justify-center mt-6">
+                <a
+                  href="https://www.instagram.com/iuriomagico/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="w-7 h-7 text-white hover:text-magic-primary transition-colors" />
+                </a>
+                <a
+                  href="https://www.youtube.com/@iuriomagico"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="YouTube"
+                >
+                  <Youtube className="w-7 h-7 text-white hover:text-magic-primary transition-colors" />
+                </a>
+                <a
+                  href="https://www.tiktok.com/@iuriomagico"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="TikTok"
+                  title="TikTok"
+                >
+                  <img
+                    src="/tiktok-logo_orig.png"
+                    alt="TikTok"
+                    className="w-7 h-7 object-contain filter grayscale hover:filter-none transition"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
