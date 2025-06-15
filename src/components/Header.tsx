@@ -48,6 +48,12 @@ const Header = () => {
           >
             Sobre
           </Link>
+          <Link
+            to="/espetaculos"
+            className="text-white hover:magical-text transition-all"
+          >
+            Espetáculos
+          </Link>
           <a
             href="#services"
             className="text-white hover:magical-text transition-all"
@@ -96,6 +102,13 @@ const Header = () => {
               onClick={() => setMobileMenuOpen(false)}
             >
               Sobre
+            </Link>
+            <Link
+              to="/espetaculos"
+              className="text-white hover:magical-text py-2 transition-all"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Espetáculos
             </Link>
             <a
               href="#services"
