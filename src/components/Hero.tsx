@@ -72,7 +72,7 @@ const Hero = () => {
             <Star fill="#9b87f5" stroke="none" className="w-5 h-5" />
             <Star fill="#9b87f5" stroke="none" className="w-5 h-5" />
           </div>
-          <p className="text-white/80">Mais de 200 eventos realizados</p>
+          <p className="text-white/80">Mais de 10.000 eventos realizados</p>
         </div>
       </div>
       {/* Gradient overlay at the bottom */}
