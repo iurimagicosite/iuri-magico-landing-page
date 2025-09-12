@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import { Phone, Instagram, Copy, Sparkles, User, Play } from "lucide-react";
@@ -36,26 +35,21 @@ const Up = () => {
         <meta property="og:url" content="https://iuriomagico.com.br/up" />
         <meta property="og:image" content="/fotos/0003.jpg" />
       </Helmet>
-      <Header />
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 relative overflow-hidden">
+      <section className="pt-8 pb-16 relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-center mb-6">
-            <Sparkles
-              className="text-magic-primary mr-2 animate-sparkle"
-              size={24}
-            />
-            <span className="text-white/80 uppercase tracking-widest text-sm">
-              Contrate Agora
-            </span>
-            <Sparkles
-              className="text-magic-primary ml-2 animate-sparkle"
-              size={24}
-            />
+            <div className="flex items-center gap-1">
+              <span className="text-yellow-400 text-2xl">★</span>
+              <span className="text-yellow-400 text-2xl">★</span>
+              <span className="text-yellow-400 text-2xl">★</span>
+              <span className="text-yellow-400 text-2xl">★</span>
+              <span className="text-yellow-400 text-2xl">★</span>
+            </div>
           </div>
           
-          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-10">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-4">
             {/* Logo */}
             <div className="flex-shrink-0 flex justify-center w-full md:w-auto">
               <img
@@ -65,7 +59,7 @@ const Up = () => {
               />
             </div>
             
-            <div className="bg-black/50 rounded-lg p-8 border border-magic-primary/20 flex-1 text-center md:text-left">
+            <div className="bg-black/50 rounded-lg border-magic-primary/20 flex-1 text-center md:text-left">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 magical-text">
                 Iuri o Mágico
               </h1>
@@ -111,7 +105,7 @@ const Up = () => {
       </section>
 
       {/* Botões de Navegação */}
-      <section className="py-16">
+      <section className="pb-16">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center mb-12">
