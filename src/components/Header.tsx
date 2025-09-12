@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import MagicLogo from "./MagicLogo";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,12 +28,12 @@ const Header = () => {
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <MagicLogo size={40} />
-          <div>
-            <h1 className="text-xl md:text-2xl font-bold magical-text">Iuri</h1>
-            <p className="text-sm text-white/80">o mágico</p>
-          </div>
+        <Link to="/" className="flex items-center">
+          <img 
+            src="/logo-iuriomagico.jpg" 
+            alt="Iuri o Mágico" 
+            className="h-12 w-12 md:h-14 md:w-14 rounded-full object-cover border-2 border-magic-primary shadow-lg"
+          />
         </Link>
 
         {/* Desktop menu */}
