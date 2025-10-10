@@ -113,7 +113,7 @@ const Sobre = () => {
               </div>
               <h3 className="text-xl font-bold mb-2">Experiência</h3>
               <p className="text-white/80">
-                Mais de 200 eventos realizados com sucesso e milhares de
+                Mais de 1.000 eventos realizados com sucesso e milhares de
                 sorrisos encantados
               </p>
             </div>

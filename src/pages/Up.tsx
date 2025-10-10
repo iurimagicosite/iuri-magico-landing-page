@@ -83,7 +83,7 @@ const Up = () => {
                   href="https://www.instagram.com/iuriomagico/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-black/50 border border-magic-primary/20 text-white hover:magical-border transition-all font-semibold"
+                  className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-magic-primary text-white hover:bg-magic-secondary transition-all font-semibold shadow-md"
                 >
                   <Instagram size={20} />
                   Instagram
@@ -93,73 +93,43 @@ const Up = () => {
                   href="https://www.tiktok.com/@iuriomagico"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-black/50 border border-magic-primary/20 text-white hover:magical-border transition-all font-semibold"
+                  className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-magic-primary text-white hover:bg-magic-secondary transition-all font-semibold shadow-md"
                 >
-                  <img src={tiktokLogo} alt="TikTok" className="w-5 h-5 object-contain filter grayscale hover:filter-none transition" />
+                  <img src={tiktokLogo} alt="TikTok" className="w-5 h-5 object-contain filter brightness-0 invert" />
                   TikTok
                 </a>
+
+                {/* Chapeu */}
+                <button
+                  onClick={copyToClipboard}
+                  className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-magic-primary text-white hover:bg-magic-secondary transition-all font-semibold shadow-md"
+                >
+                  <Copy size={20} />
+                  <span>CyberChapéu</span>
+                </button>
+
+                {/* Espetáculos */}
+                <Link
+                  to="/espetaculos"
+                  className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-magic-primary text-white hover:bg-magic-secondary transition-all font-semibold shadow-md"
+                >
+                  <Play size={20} />
+                  <span>Espetáculos</span>
+                </Link>
+
+                {/* Sobre */}
+                <Link
+                  to="/sobre"
+                  className="flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-magic-primary text-white hover:bg-magic-secondary transition-all font-semibold shadow-md"
+                >
+                  <User size={20} />
+                  <span>Sobre</span>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Botões de Navegação */}
-      <section className="pb-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold text-center mb-12">
-              Explore <span className="magical-text">Mais</span>
-            </h2>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {/* Copiar Link */}
-              <button
-                onClick={copyToClipboard}
-                className="bg-black/50 rounded-full p-8 border border-magic-primary/20 hover:magical-border transition-all text-center group"
-              >
-                <div className="bg-magic-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-magic-primary/20 transition-colors">
-                  <Copy className="text-magic-primary" size={32} />
-                </div>
-                <h3 className="text-xl font-bold mb-2">CyberChapéu</h3>
-                <p className="text-white/80 text-sm">
-                  {copied ? "Link copiado!" : "Copiar link do QR Code"}
-                </p>
-              </button>
-
-              {/* Espetáculos */}
-              <Link
-                to="/espetaculos"
-                className="bg-black/50 rounded-full p-8 border border-magic-primary/20 hover:magical-border transition-all text-center group"
-              >
-                <div className="bg-magic-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-magic-primary/20 transition-colors">
-                  <Play className="text-magic-primary" size={32} />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Espetáculos</h3>
-                <p className="text-white/80 text-sm">
-                  Conheça nossos shows
-                </p>
-              </Link>
-
-              {/* Sobre */}
-              <Link
-                to="/sobre"
-                className="bg-black/50 rounded-full p-8 border border-magic-primary/20 hover:magical-border transition-all text-center group"
-              >
-                <div className="bg-magic-primary/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-magic-primary/20 transition-colors">
-                  <User className="text-magic-primary" size={32} />
-                </div>
-                <h3 className="text-xl font-bold mb-2">Sobre</h3>
-                <p className="text-white/80 text-sm">
-                  Conheça minha história
-                </p>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <Footer />
     </main>
   );
 };
