@@ -19,37 +19,37 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://iuriomagico.art/espetaculos</loc>
-    <lastmod>2024-03-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://iuriomagico.art/espetaculos/show-de-magia</loc>
-    <lastmod>2024-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://iuriomagico.art/espetaculos/magia-close-up</loc>
-    <lastmod>2024-03-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://iuriomagico.art/produtos</loc>
     <lastmod>2024-03-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://iuriomagico.art/produtos/close-up-magic</loc>
+    <loc>https://iuriomagico.art/produto/hotel-resorts</loc>
     <lastmod>2024-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://iuriomagico.art/produtos/show-de-magia</loc>
+    <loc>https://iuriomagico.art/produto/eventos-corporativos</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://iuriomagico.art/produto/escolas-projetos-educativos</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://iuriomagico.art/produto/festas-aniversarios-casamento</loc>
+    <lastmod>2024-03-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://iuriomagico.art/produto/mentorias-conferencias</loc>
     <lastmod>2024-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>

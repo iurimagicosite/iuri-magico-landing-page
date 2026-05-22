@@ -29,12 +29,12 @@ const Footer = () => {
             >
               Sobre
             </a>
-            <a
+            {/* <a
               href="/espetaculos"
               className="text-white/80 hover:text-magic-primary transition-colors"
             >
               Espetáculos
-            </a>
+            </a> */}
             <a
               href="/produtos"
               className="text-white/80 hover:text-magic-primary transition-colors"
