@@ -9,28 +9,28 @@ const produtos = [
     titulo: "Hotelaria e Resorts",
     descricao:
       "Shows de palco, close-up e intervenções mágicas para hóspedes de grandes hotéis e resorts.",
-    imagem: "/fotos/0001.jpg",
+    imagem: "/fotos/hotel/1.jpg",
   },
   {
     slug: "eventos-corporativos",
     titulo: "Eventos Corporativos",
     descricao:
       "Mágica para empresas: shows, intervenções, palestras e promoção de quiosques em eventos corporativos.",
-    imagem: "/fotos/0001.jpg",
+    imagem: "/fotos/empresa/2.jpg",
   },
   {
     slug: "escolas-projetos-educativos",
     titulo: "Escolas e Projetos Educativos",
     descricao:
       "Shows, oficinas e mágicas pedagógicas para escolas e projetos educativos.",
-    imagem: "/fotos/0001.jpg",
+    imagem: "/fotos/escola/1.jpg",
   },
   {
     slug: "festas-aniversarios-casamento",
     titulo: "Festas, Aniversários e Casamentos",
     descricao:
       "Mágica personalizada para festas, aniversários infantis, adultos e casamentos.",
-    imagem: "/fotos/0001.jpg",
+    imagem: "/fotos/aniversario/1.jpg",
   },
   {
     slug: "mentorias-conferencias",

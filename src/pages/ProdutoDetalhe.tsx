@@ -20,7 +20,8 @@ const produtos = {
       "Times Hotel (Irlanda)",
       "Trout Lodge (Missouri, EUA)",
     ],
-    fotos: ["/fotos/0001.jpg", "/fotos/0003.jpg"],
+    banner: "/fotos/hotel/1.jpg",
+    fotos: ["/fotos/hotel/1.jpg", "/fotos/hotel/2.jpg", "/fotos/hotel/3.jpg", "/fotos/hotel/4.jpg", "/fotos/hotel/5.jpg"],
   },
   "eventos-corporativos": {
     titulo: "Eventos Corporativos",
@@ -41,7 +42,8 @@ const produtos = {
       "L'Oréal Paris",
       "Rede Bourbon",
     ],
-    fotos: ["/fotos/corporativo.jpg", "/fotos/corporativo2.jpg"],
+    banner: "/fotos/empresa/1.jpg",
+    fotos: ["/fotos/empresa/1.jpg", "/fotos/empresa/2.jpg", "/fotos/empresa/3.jpg", "/fotos/empresa/5.jpg", "/fotos/empresa/6.jpg", "/fotos/empresa/7.jpg"],
   },
   "escolas-projetos-educativos": {
     titulo: "Escolas e Projetos Educativos",
@@ -53,7 +55,8 @@ const produtos = {
       "Mágica como Recurso Pedagógico: Apoio a professores com intervenções mágicas para ilustrar conteúdos curriculares.",
     ],
     experiencia: [],
-    fotos: ["/fotos/escola.jpg", "/fotos/escola2.jpg"],
+    banner: "/fotos/escola/1.jpg",
+    fotos: ["/fotos/escola/1.jpg", "/fotos/empresa/2.jpg"],
   },
   "festas-aniversarios-casamento": {
     titulo: "Festas, Aniversários e Casamentos",
@@ -67,7 +70,8 @@ const produtos = {
       "Intervenções Temáticas: Mágicas personalizadas de acordo com o tema da festa.",
     ],
     experiencia: [],
-    fotos: ["/fotos/festa.jpg", "/fotos/festa2.jpg"],
+    banner: "/fotos/aniversario/1.jpg",
+    fotos: ["/fotos/aniversario/1.jpg", "/fotos/aniversario/2.jpg", "/fotos/aniversario/3.jpg", "/fotos/aniversario/4.jpg", "/fotos/empresa/5.jpg"],
   },
   "mentorias-conferencias": {
     titulo: "Mentorias e Conferências",
@@ -79,7 +83,8 @@ const produtos = {
       "Workshops de criatividade e comunicação.",
     ],
     experiencia: [],
-    fotos: ["/fotos/mentoria.jpg", "/fotos/mentoria2.jpg"],
+    banner: "/fotos/0003.jpg",
+    fotos: ["/fotos/0003.jpg", "/fotos/0001.jpg"],
   },
 };
 
@@ -109,6 +114,15 @@ const ProdutoDetalhe = () => {
       <Header />
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-4 max-w-3xl">
+        {produto.banner && (
+          <div className="w-full h-[300px] md:h-[450px] overflow-hidden rounded-2xl mb-10 border border-magic-primary/20">
+            <img
+              src={produto.banner}
+              alt={produto.titulo}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        )}
           <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
             <div className="flex-1 text-center md:text-left">
               <h1 className="text-4xl md:text-5xl font-bold mb-2 magical-text">
